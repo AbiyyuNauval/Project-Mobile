@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="6dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPertanyaan"
+        style="@style/TanyaBareng.Card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@color/primary_container"
+                android:contentDescription="@string/cd_avatar"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.TanyaBareng.Circle" />
+
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvMeta"
+                app:layout_constraintEnd_toStartOf="@id/tvSubject"
+                app:layout_constraintStart_toEndOf="@id/imgAvatar"
+                app:layout_constraintTop_toTopOf="@id/imgAvatar"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="rina_a" />
+
+            <TextView
+                android:id="@+id/tvMeta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/imgAvatar"
+                app:layout_constraintEnd_toEndOf="@id/tvUser"
+                app:layout_constraintStart_toStartOf="@id/tvUser"
+                app:layout_constraintTop_toBottomOf="@id/tvUser"
+                tools:text="SMA · Kelas 11 · 2 jam lalu" />
+
+            <TextView
+                android:id="@+id/tvSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="4dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imgAvatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imgAvatar"
+                tools:backgroundTint="@color/subj_math_bg"
+                tools:text="Matematika"
+                tools:textColor="@color/subj_math_fg" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgAvatar"
+                tools:text="Bagaimana cara mencari turunan dari f(x) = 3x² + 2x − 5?" />
+
+            <TextView
+                android:id="@+id/tvSnippet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                tools:text="Sudah coba pakai rumus dasar tapi hasilnya beda dengan kunci jawaban…" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVote"
+                style="@style/TanyaBareng.VoteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:paddingHorizontal="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSnippet"
+                tools:text="12" />
+
+            <TextView
+                android:id="@+id/tvAnswers"
+                style="@style/TanyaBareng.AnswerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/btnVote"
+                app:layout_constraintStart_toEndOf="@id/btnVote"
+                app:layout_constraintTop_toTopOf="@id/btnVote"
+                tools:text="3 jawaban" />
+
+            <TextView
+                android:id="@+id/tvBest"
+                style="@style/TanyaBareng.BestLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/btnVote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btnVote"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvUnanswered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill"
+                android:backgroundTint="@color/subj_other_bg"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/label_unanswered"
+                android:textColor="@color/subj_other_fg"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/btnVote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btnVote" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

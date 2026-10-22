@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Cari.CariFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:liftOnScroll="false">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.Material3.Light"
+            app:titleTextAppearance="@style/TextAppearance.TanyaBareng.Toolbar.Title"
+            app:titleTextColor="@color/on_primary" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerCari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSearch"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/surface"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/primary"
+                app:boxStrokeWidth="1dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_search"
+                app:startIconTint="@color/text_secondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/outline"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvRecentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/cari_recent_label"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilSearch" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupRecent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:chipSpacingHorizontal="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRecentLabel">
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cari_recent_1"
+                        android:textColor="@color/text_body"
+                        app:chipBackgroundColor="@color/surface"
+                        app:chipIcon="@drawable/ic_history"
+                        app:chipIconTint="@color/text_secondary"
+                        app:chipIconVisible="true"
+                        app:chipStrokeColor="@color/outline_variant" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cari_recent_2"
+                        android:textColor="@color/text_body"
+                        app:chipBackgroundColor="@color/surface"
+                        app:chipIcon="@drawable/ic_history"
+                        app:chipIconTint="@color/text_secondary"
+                        app:chipIconVisible="true"
+                        app:chipStrokeColor="@color/outline_variant" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cari_recent_3"
+                        android:textColor="@color/text_body"
+                        app:chipBackgroundColor="@color/surface"
+                        app:chipIcon="@drawable/ic_history"
+                        app:chipIconTint="@color/text_secondary"
+                        app:chipIconVisible="true"
+                        app:chipStrokeColor="@color/outline_variant" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tvLevelLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/form_level"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chipGroupRecent" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollLevel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLevelLabel">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="8dp"
+                    app:singleLine="true">
+
+                        <com.google.android.material.chip.Chip
+                            style="@style/TanyaBareng.Chip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/subject_all"
+                            android:textColor="@color/on_primary"
+                            app:chipBackgroundColor="@color/primary"
+                            app:chipIcon="@drawable/ic_check"
+                            app:chipIconTint="@color/on_primary"
+                            app:chipIconVisible="true"
+                            app:chipStrokeColor="@color/primary" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/TanyaBareng.Chip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/level_sd"
+                            android:textColor="@color/text_body"
+                            app:chipBackgroundColor="@color/surface"
+                            app:chipStrokeColor="@color/outline_variant" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/TanyaBareng.Chip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/level_smp"
+                            android:textColor="@color/text_body"
+                            app:chipBackgroundColor="@color/surface"
+                            app:chipStrokeColor="@color/outline_variant" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/TanyaBareng.Chip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/level_sma"
+                            android:textColor="@color/text_body"
+                            app:chipBackgroundColor="@color/surface"
+                            app:chipStrokeColor="@color/outline_variant" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/TanyaBareng.Chip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/level_college"
+                            android:textColor="@color/text_body"
+                            app:chipBackgroundColor="@color/surface"
+                            app:chipStrokeColor="@color/outline_variant" />
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvSectionSubjects"
+                style="@style/TanyaBareng.SectionHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/cari_section_subjects"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scrollLevel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listViewMapel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/surface"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"
+        android:nestedScrollingEnabled="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

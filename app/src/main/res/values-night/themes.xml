@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        Mode gelap belum dirancang, jadi tetap memakai tema terang
+        agar tampilan sama dengan desain jadi.
+    -->
+    <style name="Base.Theme.Abiyyu_3TIA" parent="Theme.Material3.Light.NoActionBar" />
+</resources>

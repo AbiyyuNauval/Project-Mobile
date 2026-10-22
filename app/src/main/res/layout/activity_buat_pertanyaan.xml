@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".BuatPertanyaanActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="false">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.Material3.Light"
+            app:titleTextAppearance="@style/TextAppearance.TanyaBareng.Toolbar.Title"
+            app:titleTextColor="@color/on_primary" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:id="@+id/tvLabelSubject"
+                style="@style/TanyaBareng.FormLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/form_subject"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLabelSubjectRequired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/required_mark"
+                android:textColor="@color/error"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvLabelSubject"
+                app:layout_constraintStart_toEndOf="@id/tvLabelSubject" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupSubject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelSubject">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_math"
+                    android:textColor="@color/subj_math_fg"
+                    app:chipBackgroundColor="@color/subj_math_bg"
+                    app:chipStrokeColor="@color/subj_math_bg" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_physics"
+                    android:textColor="@color/subj_physics_fg"
+                    app:chipBackgroundColor="@color/subj_physics_bg"
+                    app:chipStrokeColor="@color/subj_physics_bg" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_chem"
+                    android:textColor="@color/subj_chem_fg"
+                    app:chipBackgroundColor="@color/subj_chem_bg"
+                    app:chipStrokeColor="@color/subj_chem_bg" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_bio"
+                    android:textColor="@color/subj_bio_fg"
+                    app:chipBackgroundColor="@color/subj_bio_bg"
+                    app:chipStrokeColor="@color/subj_bio_bg" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_indo"
+                    android:textColor="@color/subj_indo_fg"
+                    app:chipBackgroundColor="@color/subj_indo_bg"
+                    app:chipStrokeColor="@color/subj_indo_bg" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_eng"
+                    android:textColor="@color/subj_eng_fg"
+                    app:chipBackgroundColor="@color/subj_eng_bg"
+                    app:chipStrokeColor="@color/subj_eng_bg" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_history"
+                    android:textColor="@color/subj_history_fg"
+                    app:chipBackgroundColor="@color/subj_history_bg"
+                    app:chipStrokeColor="@color/subj_history_bg" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/TanyaBareng.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_other"
+                    android:textColor="@color/subj_other_fg"
+                    app:chipBackgroundColor="@color/subj_other_bg"
+                    app:chipStrokeColor="@color/subj_other_bg" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tvLabelLevel"
+                style="@style/TanyaBareng.FormLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/form_level"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chipGroupSubject" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleLevel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:checkedButton="@id/btnLevelSma"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelLevel"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLevelSd"
+                    style="@style/TanyaBareng.LevelButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/level_sd" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLevelSmp"
+                    style="@style/TanyaBareng.LevelButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/level_smp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLevelSma"
+                    style="@style/TanyaBareng.LevelButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/level_sma" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLevelKuliah"
+                    style="@style/TanyaBareng.LevelButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/level_college" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <TextView
+                android:id="@+id/tvLabelTitle"
+                style="@style/TanyaBareng.FormLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:labelFor="@id/edtTitle"
+                android:text="@string/form_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toggleLevel" />
+
+            <TextView
+                android:id="@+id/tvLabelTitleRequired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/required_mark"
+                android:textColor="@color/error"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvLabelTitle"
+                app:layout_constraintStart_toEndOf="@id/tvLabelTitle" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTitle"
+                style="@style/TanyaBareng.FormField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="100"
+                app:helperText="@string/form_title_helper"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/form_title_hint"
+                    android:inputType="textCapSentences"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/outline"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvLabelBody"
+                style="@style/TanyaBareng.FormLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:labelFor="@id/edtBody"
+                android:text="@string/form_body"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilTitle" />
+
+            <TextView
+                android:id="@+id/tvLabelBodyRequired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/required_mark"
+                android:textColor="@color/error"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvLabelBody"
+                app:layout_constraintStart_toEndOf="@id/tvLabelBody" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBody"
+                style="@style/TanyaBareng.FormField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelBody">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:hint="@string/form_body_hint"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lineSpacingExtra="4dp"
+                    android:minLines="5"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/outline"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvLabelPhoto"
+                style="@style/TanyaBareng.FormLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/form_photo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilBody" />
+
+            <TextView
+                android:id="@+id/tvLabelPhotoOptional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/form_optional"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvLabelPhoto"
+                app:layout_constraintStart_toEndOf="@id/tvLabelPhoto" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPhotoEmpty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_dashed_box"
+                android:padding="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelPhoto">
+
+                <TextView
+                    android:id="@+id/tvPhotoHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/form_photo_hint"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCamera"
+                    style="@style/TanyaBareng.PhotoPickButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/btn_camera"
+                    app:icon="@drawable/ic_camera"
+                    app:layout_constraintEnd_toStartOf="@id/btnGallery"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvPhotoHint" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGallery"
+                    style="@style/TanyaBareng.PhotoPickButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/btn_gallery"
+                    app:icon="@drawable/ic_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btnCamera"
+                    app:layout_constraintTop_toTopOf="@id/btnCamera" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutTips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_rounded_14"
+                android:backgroundTint="@color/secondary_container"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutPhotoEmpty">
+
+                <TextView
+                    android:id="@+id/tvTipsTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tips_title"
+                    android:textColor="@color/on_secondary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTipsBody"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tips_body"
+                    android:textColor="@color/on_secondary_container"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTipsTitle" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_bar"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_submit_question"
+            android:textColor="@color/on_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primary"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_send"
+            app:iconGravity="textStart"
+            app:iconSize="18dp"
+            app:iconTint="@color/on_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

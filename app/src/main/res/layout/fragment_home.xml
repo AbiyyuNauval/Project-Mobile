@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Home.HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:liftOnScroll="false">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.Material3.Light"
+            app:subtitleTextColor="@color/on_primary_muted"
+            app:titleTextAppearance="@style/TextAppearance.TanyaBareng.Toolbar.Title"
+            app:titleTextColor="@color/on_primary" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerBeranda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:paddingTop="16dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSearch"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:boxBackgroundColor="@color/surface"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/primary"
+                app:boxStrokeWidth="1dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_search"
+                app:startIconTint="@color/text_secondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/outline"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/secondary_container"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilSearch"
+                app:strokeWidth="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvCtaTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:text="@string/home_cta_title"
+                        android:textColor="@color/on_secondary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/tvCtaDesc"
+                        app:layout_constraintEnd_toStartOf="@id/btnTanya"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/tvCtaDesc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/home_cta_desc"
+                        android:textColor="@color/on_secondary_container"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvCtaTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCtaTitle" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTanya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:backgroundTint="@color/primary"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/btn_tanya"
+                        android:textColor="@color/on_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollChips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:paddingHorizontal="20dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardCta">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="8dp"
+                    app:singleLine="true">
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_all"
+                        android:textColor="@color/on_primary"
+                        app:chipBackgroundColor="@color/primary"
+                        app:chipIcon="@drawable/ic_check"
+                        app:chipIconTint="@color/on_primary"
+                        app:chipIconVisible="true"
+                        app:chipStrokeColor="@color/primary" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_math"
+                        android:textColor="@color/subj_math_fg"
+                        app:chipBackgroundColor="@color/subj_math_bg"
+                        app:chipStrokeColor="@color/subj_math_bg" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_physics"
+                        android:textColor="@color/subj_physics_fg"
+                        app:chipBackgroundColor="@color/subj_physics_bg"
+                        app:chipStrokeColor="@color/subj_physics_bg" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_chem"
+                        android:textColor="@color/subj_chem_fg"
+                        app:chipBackgroundColor="@color/subj_chem_bg"
+                        app:chipStrokeColor="@color/subj_chem_bg" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_bio"
+                        android:textColor="@color/subj_bio_fg"
+                        app:chipBackgroundColor="@color/subj_bio_bg"
+                        app:chipStrokeColor="@color/subj_bio_bg" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_eng"
+                        android:textColor="@color/subj_eng_fg"
+                        app:chipBackgroundColor="@color/subj_eng_bg"
+                        app:chipStrokeColor="@color/subj_eng_bg" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/TanyaBareng.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_history"
+                        android:textColor="@color/subj_history_fg"
+                        app:chipBackgroundColor="@color/subj_history_bg"
+                        app:chipStrokeColor="@color/subj_history_bg" />
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabFeed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scrollChips"
+                app:tabGravity="start"
+                app:tabIndicatorColor="@color/primary"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="scrollable"
+                app:tabRippleColor="@color/primary_container"
+                app:tabSelectedTextColor="@color/primary"
+                app:tabTextAppearance="@style/TextAppearance.TanyaBareng.Tab"
+                app:tabTextColor="@color/text_secondary">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_latest" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_unanswered" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <View
+                android:id="@+id/dividerTab"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/outline_variant"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabFeed" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listPertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:nestedScrollingEnabled="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

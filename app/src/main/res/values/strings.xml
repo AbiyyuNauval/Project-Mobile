@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">Abiyyu_3TIA</string>
+    <string name="about">My favorite season is autumn. The leaves transform into brilliant reds, oranges, and yellows. Crisp, cool air makes outdoor activities comfortable and enjoyable. Harvest festivals and Halloween add excitement to the season. Everything about fall feels cozy and welcoming.</string>
+    <string name="deskripsi">Halaman Login</string>
+
+    <!-- Halaman Splash Screen -->
+    <string name="splash_slogan">Tanya, jawab, belajar bareng.</string>
+    <string name="splash_tagline">Forum Tanya-Jawab Pelajar</string>
+    <string name="splash_version">Versi 1.0</string>
+    <string name="cd_loading">Memuat aplikasi</string>
+
+    <!-- Halaman Login -->
+    <string name="brand_name">TanyaBareng</string>
+    <string name="cd_logo">Logo TanyaBareng</string>
+    <string name="login_title">Masuk</string>
+    <string name="login_subtitle">Senang melihatmu lagi! Masuk untuk lanjut bertanya dan menjawab.</string>
+    <string name="label_username">Username</string>
+    <string name="hint_username">Masukkan username</string>
+    <string name="label_password">Kata Sandi</string>
+    <string name="hint_password">Minimal 6 karakter</string>
+    <string name="cd_toggle_password">Tampilkan kata sandi</string>
+    <string name="remember_me">Ingat saya</string>
+    <string name="forgot_password">Lupa kata sandi?</string>
+    <string name="btn_login">Masuk</string>
+    <string name="login_divider">atau masuk dengan</string>
+    <string name="btn_login_google">Lanjutkan dengan Google</string>
+    <string name="no_account">Belum punya akun?</string>
+    <string name="register_now">Daftar sekarang</string>
+
+    <!-- Halaman Beranda -->
+    <string name="home_greeting">Selamat datang,</string>
+    <string name="home_username_default">Username</string>
+    <string name="cd_notifications">Notifikasi</string>
+    <string name="btn_logout">Keluar</string>
+    <string name="hint_search">Cari pertanyaan atau materi…</string>
+    <string name="home_section_latest">Pertanyaan Terbaru</string>
+    <string name="cd_empty_icon">Ikon belum ada pertanyaan</string>
+    <string name="home_empty_title">Belum ada pertanyaan</string>
+    <string name="home_empty_desc">Pertanyaan dari pengguna lain akan muncul di sini.</string>
+    <string name="btn_create_question">Buat Pertanyaan</string>
+    <string name="home_hello">Halo, %1$s</string>
+    <string name="menu_profile">Profil Saya</string>
+    <string name="menu_logout">Logout</string>
+    <string name="snackbar_no_notification">Belum ada notifikasi baru</string>
+
+    <!-- Halaman Detail Proyek -->
+    <string name="detail_toolbar_title">Detail Proyek</string>
+    <string name="cd_back">Kembali</string>
+    <string name="cd_detail_image">Gambar aplikasi TanyaBareng</string>
+    <string name="detail_title">TanyaBareng</string>
+    <string name="detail_description">TanyaBareng adalah aplikasi yang menjadi wadah tanya-jawab antar pelajar. Pengguna dapat memposting pertanyaan seputar pelajaran, lengkap dengan foto soal, lalu pengguna lain membantu menjawabnya.\n\nJawaban yang membantu dapat diberi upvote, dan penanya dapat memilih satu Jawaban Terbaik.</string>
+
+    <!-- Mata Pelajaran -->
+    <string name="subject_all">Semua</string>
+    <string name="subject_math">Matematika</string>
+    <string name="subject_physics">Fisika</string>
+    <string name="subject_chem">Kimia</string>
+    <string name="subject_bio">Biologi</string>
+    <string name="subject_indo">B. Indonesia</string>
+    <string name="subject_eng">B. Inggris</string>
+    <string name="subject_history">Sejarah</string>
+    <string name="subject_other">Lainnya</string>
+    <string name="level_sd">SD</string>
+    <string name="level_smp">SMP</string>
+    <string name="level_sma">SMA</string>
+    <string name="level_college">Kuliah</string>
+
+    <string name="home_cta_title">Ada soal yang bikin bingung?</string>
+    <string name="home_cta_desc">Tanyakan sekarang, teman-teman siap bantu jawab.</string>
+    <string name="btn_tanya">Tanya</string>
+    <string name="tab_latest">Terbaru</string>
+    <string name="tab_unanswered">Belum Terjawab</string>
+    <string name="label_best_answer">Jawaban Terbaik</string>
+    <string name="label_unanswered">Belum terjawab</string>
+
+    <!-- Beranda -->
+    <string name="detail_sort">Urutkan: Terbaik</string>
+    <string name="detail_q_initials">RA</string>
+    <string name="detail_q_user">rina_a</string>
+    <string name="detail_q_meta">SMA · Kelas 11 · 2 jam lalu</string>
+    <string name="detail_q_title">Bagaimana cara mencari turunan dari f(x) = 3x² + 2x − 5?</string>
+    <string name="detail_q_body">Aku sudah coba pakai rumus dasar turunan, tapi hasilku 6x + 2x − 5 dan berbeda dengan kunci jawaban. Bagian mana yang salah ya?</string>
+    <string name="detail_q_views">Dilihat 86 kali</string>
+    <string name="label_question_photo">Foto soal</string>
+    <string name="label_answer_photo">Foto jawaban</string>
+    <string name="hand_question_1">Soal no. 4</string>
+    <string name="hand_question_2">Tentukan f\'(x) jika f(x) = 3x² + 2x − 5</string>
+    <string name="hand_question_3">Jawabanku: 6x + 2x − 5 ?</string>
+    <string name="hand_answer_1">f(x) = 3x² + 2x − 5</string>
+    <string name="hand_answer_2">f\'(x) = 3·2x + 2·1 + 0</string>
+    <string name="hand_answer_3">f\'(x) = 6x + 2 ✓</string>
+    <string name="hint_answer">Tulis jawabanmu…</string>
+    <string name="cd_attach_photo">Lampirkan foto</string>
+    <string name="cd_send_answer">Kirim jawaban</string>
+    <string name="sheet_attach_title">Lampirkan foto jawaban</string>
+    <string name="sheet_camera">Ambil dari Kamera</string>
+    <string name="sheet_gallery">Pilih dari Galeri</string>
+    <string name="menu_bookmark">Simpan pertanyaan</string>
+    <string name="menu_share">Bagikan</string>
+    <string name="menu_report">Laporkan</string>
+
+    <!-- Buat Pertanyaan -->
+    <string name="form_subject">Mata Pelajaran</string>
+    <string name="form_level">Jenjang</string>
+    <string name="form_title">Judul Pertanyaan</string>
+    <string name="form_title_hint">Contoh: Cara mencari turunan fungsi kuadrat</string>
+    <string name="form_title_helper">Tulis singkat dan jelas, minimal 10 karakter</string>
+    <string name="form_body">Detail Pertanyaan</string>
+    <string name="form_body_hint">Jelaskan bagian mana yang membuatmu bingung dan apa yang sudah kamu coba…</string>
+    <string name="form_photo">Foto Soal</string>
+    <string name="form_optional">(opsional)</string>
+    <string name="form_photo_hint">Foto soal membantu penjawab memahami pertanyaanmu.</string>
+    <string name="btn_camera">Kamera</string>
+    <string name="btn_gallery">Galeri</string>
+    <string name="tips_title">Tips agar cepat dijawab</string>
+    <string name="tips_body">•  Tulis judul yang langsung ke inti masalah.\n•  Ceritakan langkah yang sudah kamu coba.\n•  Pastikan foto soal terang dan tidak buram.</string>
+    <string name="btn_submit_question">Kirim Pertanyaan</string>
+    <string name="menu_save_draft">Simpan sebagai draf</string>
+    <string name="menu_guide">Panduan bertanya</string>
+    <string name="menu_clear_form">Kosongkan formulir</string>
+
+    <!-- Notifikasi -->
+    <string name="notif_today">HARI INI</string>
+    <string name="notif_week">MINGGU INI</string>
+    <string name="notif_footer">Notifikasi lebih dari 30 hari otomatis dihapus.</string>
+    <string name="menu_mark_all_read">Tandai semua dibaca</string>
+    <string name="cd_unread">Belum dibaca</string>
+
+    <!-- Profil -->
+    <string name="profile_class">SMA · Kelas 11</string>
+    <string name="profile_bio">Suka matematika dan fisika. Senang bantu teman belajar.</string>
+    <string name="profile_level">Level 4 · Penjelas Andal</string>
+    <string name="profile_points">340 poin</string>
+    <string name="profile_progress_hint">160 poin lagi menuju Level 5</string>
+    <string name="cd_level_progress">Progres menuju Level 5</string>
+    <string name="profile_stat_questions_value">8</string>
+    <string name="profile_stat_questions">Pertanyaan</string>
+    <string name="profile_stat_answers_value">24</string>
+    <string name="profile_stat_answers">Jawaban</string>
+    <string name="profile_stat_best_value">5</string>
+    <string name="profile_stat_best">Terbaik</string>
+    <string name="profile_badges">Lencana</string>
+    <string name="badge_first_answer">Penjawab Pertama</string>
+    <string name="badge_best_5">5× Terbaik</string>
+    <string name="badge_streak">Rajin 7 Hari</string>
+    <string name="tab_my_questions">Pertanyaan Saya</string>
+    <string name="tab_my_answers">Jawaban Saya</string>
+    <string name="menu_edit_profile">Edit Profil</string>
+    <string name="menu_settings">Pengaturan</string>
+
+    <string name="detail_answers_title_static">3 Jawaban</string>
+    <string name="a1_initials">AM</string>
+    <string name="a1_user">aldi.m</string>
+    <string name="a1_meta">SMA · Kelas 12 · 1 jam lalu</string>
+    <string name="a1_body">Pakai aturan pangkat: turunan dari a·xⁿ adalah a·n·xⁿ⁻¹.\n\n•  3x² → 3·2·x¹ = 6x\n•  2x → 2·1·x⁰ = 2\n•  −5 (konstanta) → 0\n\nJadi f\'(x) = 6x + 2. Kesalahanmu ada di suku 2x: turunannya 2, bukan 2x, dan konstanta −5 hilang.</string>
+    <string name="a2_initials">PN</string>
+    <string name="a2_user">putri_n</string>
+    <string name="a2_meta">SMA · Kelas 11 · 50 menit lalu</string>
+    <string name="a2_body">Tips cepat: konstanta selalu hilang saat diturunkan, dan x berpangkat 1 tinggal angkanya saja.\nCek: f\'(1) = 6(1) + 2 = 8.</string>
+    <string name="a3_initials">YG</string>
+    <string name="a3_user">yoga21</string>
+    <string name="a3_meta">SMA · Kelas 12 · 30 menit lalu</string>
+    <string name="a3_body">Setuju dengan jawaban di atas, hasilnya f\'(x) = 6x + 2.</string>
+    <string name="profile_initials_default">AB</string>
+    <string name="required_mark">*</string>
+
+    <!-- Bottom Navigation & Fragment -->
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_notifikasi">Notifikasi</string>
+    <string name="nav_profil">Profil</string>
+    <string name="p1_time">2 jam lalu</string>
+    <string name="p1_title">Bagaimana cara mencari turunan dari f(x) = 3x² + 2x − 5?</string>
+    <string name="p1_status">3 jawaban · Jawaban Terbaik dipilih</string>
+    <string name="p2_time">3 hari lalu</string>
+    <string name="p2_title">Apa beda kecepatan dan kelajuan?</string>
+    <string name="p2_status">2 jawaban</string>
+    <string name="p3_time">1 minggu lalu</string>
+    <string name="p3_title">Kenapa garam dapur mudah larut dalam air?</string>
+    <string name="p3_status">Belum terjawab</string>
+
+    <!-- Halaman Cari -->
+    <string name="nav_cari">Cari</string>
+    <string name="cari_recent_label">Pencarian terakhir</string>
+    <string name="cari_recent_1">turunan fungsi</string>
+    <string name="cari_recent_2">hukum newton</string>
+    <string name="cari_recent_3">present perfect</string>
+    <string name="cari_section_subjects">JELAJAHI MATA PELAJARAN</string>
+    <string name="cd_avatar">Foto pengguna</string>
+</resources>
