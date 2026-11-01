@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tutorial_dot_inactive">#C2CBC6</color>
+
+    <string name="menu_tutorial">Tutorial TanyaBareng</string>
+    <string name="tutorial_skip">Lewati</string>
+    <string name="tutorial_next">Lanjut</string>
+    <string name="tutorial_start">Mulai</string>
+    <string name="tutorial_title_1">Tanya apa saja, kapan saja</string>
+    <string name="tutorial_desc_1">Foto soalmu atau tulis pertanyaanmu, lalu pilih mata pelajarannya. Teman-teman akan membantu menjawab.</string>
+    <string name="tutorial_title_2">Jawab dan dukung teman</string>
+    <string name="tutorial_desc_2">Bagikan caramu menyelesaikan soal. Beri dukungan pada jawaban yang menurutmu paling jelas.</string>
+    <string name="tutorial_title_3">Pilih Jawaban Terbaik</string>
+    <string name="tutorial_desc_3">Penanya bisa menandai jawaban yang paling membantu. Kumpulkan poin dan lencana dari setiap jawabanmu.</string>
+    <string name="tutorial_user_rina">rina_a</string>
+    <string name="tutorial_user_aldi">aldi_m</string>
+    <string name="tutorial_answer_label">Jawaban</string>
+    <string name="tutorial_question">Bagaimana cara mencari turunan dari f(x) = 3x² + 2x − 5?</string>
+    <string name="tutorial_answer">Turunan 3x² adalah 6x, 2x menjadi 2, dan konstanta −5 hilang. Jadi f\'(x) = 6x + 2.</string>
+    <string name="tutorial_votes">9</string>
+    <string name="tutorial_points">+10 poin untuk aldi_m</string>
+
+    <style name="TanyaBareng.Tutorial.Title" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">24dp</item>
+        <item name="android:layout_marginTop">36dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:accessibilityHeading">true</item>
+    </style>
+    <style name="TanyaBareng.Tutorial.Description" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">24dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TanyaBareng.Tutorial.Avatar" parent="">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/shape_circle</item>
+        <item name="android:backgroundTint">@color/primary_container</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/on_primary_container</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+</resources>

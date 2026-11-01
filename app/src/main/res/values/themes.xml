@@ -1,25 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!--
-        Tema dasar. Dipaksa mode terang (Light) karena palet TanyaBareng
-        baru dirancang untuk mode terang. values-night memakai parent yang sama.
-    -->
     <style name="Base.Theme.Abiyyu_3TIA" parent="Theme.Material3.Light.NoActionBar" />
 
-    <!-- Tema aplikasi TanyaBareng: warna + font dari desain jadi -->
     <style name="Theme.Abiyyu_3TIA" parent="Base.Theme.Abiyyu_3TIA">
-        <!-- Warna utama (hijau toska) -->
         <item name="colorPrimary">@color/primary</item>
         <item name="colorOnPrimary">@color/on_primary</item>
         <item name="colorPrimaryContainer">@color/primary_container</item>
         <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
 
-        <!-- Warna kedua (amber): poin, lencana, jawaban terbaik -->
         <item name="colorSecondary">@color/secondary</item>
         <item name="colorOnSecondary">@color/on_secondary</item>
         <item name="colorSecondaryContainer">@color/secondary_container</item>
         <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
 
-        <!-- Latar & permukaan -->
         <item name="android:colorBackground">@color/background</item>
         <item name="colorOnBackground">@color/text_primary</item>
         <item name="colorSurface">@color/surface</item>
@@ -29,14 +21,11 @@
         <item name="colorOutline">@color/outline</item>
         <item name="colorOutlineVariant">@color/outline_variant</item>
 
-        <!-- Error -->
         <item name="colorError">@color/error</item>
         <item name="colorOnError">@color/white</item>
 
-        <!-- Ikon status bar putih, karena bagian atas tiap layar berwarna hijau -->
         <item name="android:windowLightStatusBar">false</item>
 
-        <!-- Font Plus Jakarta Sans untuk semua teks -->
         <item name="android:fontFamily">@font/plus_jakarta_sans</item>
         <item name="fontFamily">@font/plus_jakarta_sans</item>
         <item name="textAppearanceHeadlineSmall">@style/TextAppearance.TanyaBareng.HeadlineSmall</item>
@@ -51,19 +40,10 @@
         <item name="textAppearanceLabelSmall">@style/TextAppearance.TanyaBareng.LabelSmall</item>
     </style>
 
-    <!--
-        Tema khusus SplashScreenActivity: latar jendela hijau, sehingga
-        splash bawaan Android 12+ (ikon aplikasi) menyatu mulus dengan Splash Screen kita.
-    -->
     <style name="Theme.Abiyyu_3TIA.Splash">
         <item name="android:windowBackground">@color/primary</item>
     </style>
 
-    <!--
-        Skala tipografi Material 3 yang diganti font-nya.
-        Dipakai otomatis oleh komponen Material (Button, TextInputLayout, Toolbar, Chip, dll).
-    -->
-    <!-- Judul Toolbar: tebal, memakai Plus Jakarta Sans -->
     <style name="TextAppearance.TanyaBareng.Toolbar.Title" parent="TextAppearance.Material3.TitleLarge">
         <item name="fontFamily">@font/plus_jakarta_sans</item>
         <item name="android:fontFamily">@font/plus_jakarta_sans</item>
@@ -110,11 +90,6 @@
         <item name="android:fontFamily">@font/plus_jakarta_sans</item>
     </style>
 
-    <!-- ===================================================== -->
-    <!-- Gaya komponen yang dipakai berulang di desain jadi     -->
-    <!-- ===================================================== -->
-
-    <!-- Teks tab (Terbaru / Belum Terjawab, Pertanyaan Saya / Jawaban Saya) -->
     <style name="TextAppearance.TanyaBareng.Tab" parent="TextAppearance.Material3.TitleSmall">
         <item name="fontFamily">@font/plus_jakarta_sans</item>
         <item name="android:fontFamily">@font/plus_jakarta_sans</item>
@@ -124,14 +99,12 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <!-- Judul bagian di formulir, mis. "Mata Pelajaran *" -->
     <style name="TanyaBareng.FormLabel" parent="">
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Judul kelompok di Notifikasi, mis. "HARI INI" -->
     <style name="TanyaBareng.SectionHeader" parent="">
         <item name="android:textColor">@color/text_secondary</item>
         <item name="android:textSize">13sp</item>
@@ -139,7 +112,6 @@
         <item name="android:letterSpacing">0.04</item>
     </style>
 
-    <!-- Kolom isian bergaris dengan sudut 12dp -->
     <style name="TanyaBareng.FormField" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="boxBackgroundColor">@color/surface</item>
         <item name="boxStrokeColor">@color/primary</item>
@@ -152,7 +124,6 @@
         <item name="boxStrokeErrorColor">@color/error</item>
     </style>
 
-    <!-- Tombol pilihan Jenjang (SD / SMP / SMA / Kuliah) -->
     <style name="TanyaBareng.LevelButton" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
@@ -168,7 +139,6 @@
         <item name="cornerRadius">12dp</item>
     </style>
 
-    <!-- Tombol Kamera / Galeri di formulir -->
     <style name="TanyaBareng.PhotoPickButton" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
@@ -181,7 +151,6 @@
         <item name="cornerRadius">12dp</item>
     </style>
 
-    <!-- Tombol ikon persegi 48dp (lampirkan foto) -->
     <style name="TanyaBareng.IconButton.Outlined" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
@@ -197,7 +166,6 @@
         <item name="cornerRadius">12dp</item>
     </style>
 
-    <!-- Tombol ikon persegi 48dp terisi (kirim jawaban) -->
     <style name="TanyaBareng.IconButton.Filled" parent="Widget.Material3.Button">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
@@ -212,7 +180,6 @@
         <item name="cornerRadius">12dp</item>
     </style>
 
-    <!-- Label kecil gelap di pojok foto, mis. "Foto soal" -->
     <style name="TanyaBareng.PhotoLabel" parent="">
         <item name="android:background">@drawable/bg_pill</item>
         <item name="android:backgroundTint">@color/label_dark</item>
@@ -225,7 +192,6 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Tulisan tangan pada foto soal/jawaban (font bawaan Android "casual") -->
     <style name="TanyaBareng.Handwriting" parent="">
         <item name="android:fontFamily">casual</item>
         <item name="android:textColor">@color/ink_blue</item>
@@ -233,9 +199,6 @@
         <item name="android:lineSpacingExtra">2dp</item>
     </style>
 
-    <!-- ===== Gaya untuk kartu & elemen statis desain jadi ===== -->
-
-    <!-- Kartu putih bergaris tipis -->
     <style name="TanyaBareng.Card" parent="Widget.Material3.CardView.Outlined">
         <item name="cardBackgroundColor">@color/surface</item>
         <item name="cardCornerRadius">16dp</item>
@@ -243,7 +206,6 @@
         <item name="strokeWidth">1dp</item>
     </style>
 
-    <!-- Avatar bulat berisi inisial -->
     <style name="TanyaBareng.Avatar" parent="">
         <item name="android:background">@drawable/shape_circle</item>
         <item name="android:backgroundTint">@color/primary_container</item>
@@ -253,7 +215,6 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Tombol dukung (vote) dengan panah ke atas -->
     <style name="TanyaBareng.VoteButton" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
@@ -270,7 +231,6 @@
         <item name="iconPadding">6dp</item>
     </style>
 
-    <!-- Teks "3 jawaban" dengan ikon balon chat -->
     <style name="TanyaBareng.AnswerCount" parent="">
         <item name="drawableStartCompat">@drawable/ic_chat</item>
         <item name="drawableTint">@color/text_secondary</item>
@@ -281,7 +241,6 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Label amber "Jawaban Terbaik" -->
     <style name="TanyaBareng.BestLabel" parent="">
         <item name="android:background">@drawable/bg_pill</item>
         <item name="android:backgroundTint">@color/secondary_container</item>
@@ -297,9 +256,14 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Chip mata pelajaran (hanya tampilan, tidak bisa dipilih) -->
-    <style name="TanyaBareng.Chip" parent="Widget.Material3.Chip.Suggestion">
-        <item name="android:checkable">false</item>
+    <style name="TanyaBareng.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:checkable">true</item>
+        <item name="android:textColor">@color/chip_selection_text</item>
+        <item name="chipBackgroundColor">@color/chip_selection_bg</item>
+        <item name="chipStrokeColor">@color/chip_selection_stroke</item>
+        <item name="checkedIcon">@drawable/ic_check</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="checkedIconTint">@color/chip_selection_text</item>
         <item name="chipStrokeWidth">1dp</item>
         <item name="chipMinHeight">36dp</item>
         <item name="chipCornerRadius">999dp</item>
@@ -307,8 +271,6 @@
         <item name="android:textSize">13sp</item>
     </style>
 
-    <!-- ===== Bottom Navigation (Pertemuan 7) ===== -->
-    <!-- Latar putih; tab aktif berwarna hijau dengan pil hijau pucat di belakang ikon -->
     <style name="TanyaBareng.BottomNav" parent="Widget.Material3.BottomNavigationView">
         <item name="backgroundTint">@color/surface</item>
         <item name="itemIconTint">@color/bottom_nav_item</item>
@@ -334,7 +296,6 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Bentuk bulat untuk foto avatar (ShapeableImageView) -->
     <style name="ShapeAppearance.TanyaBareng.Circle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

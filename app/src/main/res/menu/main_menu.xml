@@ -10,6 +10,13 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/action_tutorial"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_tutorial"
+        app:iconTint="@color/on_primary"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_profile"
         android:title="@string/menu_profile"
         app:showAsAction="never" />

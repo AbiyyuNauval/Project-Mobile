@@ -1,0 +1,203 @@
+[
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\dependencies.png",
+    "source": "app/build.gradle.kts",
+    "lines": [
+      41,
+      42,
+      43
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\chipgroup.png",
+    "source": "app/src/main/res/layout/fragment_home.xml",
+    "lines": [
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\chipstyle.png",
+    "source": "app/src/main/res/values/themes.xml",
+    "lines": [
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\chipselector.png",
+    "source": "app/src/main/res/color/chip_selection_bg.xml",
+    "lines": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\wave.png",
+    "source": "app/src/main/res/drawable/bg_header_wave.xml",
+    "lines": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\waveapply.png",
+    "source": "app/src/main/res/layout/fragment_profil.xml",
+    "lines": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\grid.png",
+    "source": "app/src/main/res/layout/fragment_profil.xml",
+    "lines": [
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\fragment.png",
+    "source": "app/src/main/java/com/example/abiyyu_3tia/Tutorial/Tutorial1Fragment.kt",
+    "lines": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\adapter.png",
+    "source": "app/src/main/java/com/example/abiyyu_3tia/Tutorial/TutorialFragmentAdapter.kt",
+    "lines": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\pager.png",
+    "source": "app/src/main/java/com/example/abiyyu_3tia/Tutorial/TutorialActivity.kt",
+    "lines": [
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\open_tutorial.png",
+    "source": "app/src/main/java/com/example/abiyyu_3tia/Home/HomeFragment.kt",
+    "lines": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\buttons.png",
+    "source": "app/src/main/java/com/example/abiyyu_3tia/Tutorial/TutorialActivity.kt",
+    "lines": [
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ]
+  },
+  {
+    "image": "D:\\Abiyyu_3TIA\\tmp\\report_modul9\\code_images\\navigation.png",
+    "source": "app/src/main/java/com/example/abiyyu_3tia/Tutorial/TutorialActivity.kt",
+    "lines": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62
+    ]
+  }
+]

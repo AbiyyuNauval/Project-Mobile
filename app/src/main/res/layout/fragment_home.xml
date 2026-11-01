@@ -148,74 +148,78 @@
                     android:id="@+id/chipGroupSubject"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    app:selectionRequired="true"
                     app:chipSpacingHorizontal="8dp"
                     app:singleLine="true">
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipHomeSubjectAll"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/subject_all"
-                        android:textColor="@color/on_primary"
-                        app:chipBackgroundColor="@color/primary"
-                        app:chipIcon="@drawable/ic_check"
-                        app:chipIconTint="@color/on_primary"
-                        app:chipIconVisible="true"
-                        app:chipStrokeColor="@color/primary" />
+                        android:checked="true"
+                        android:text="@string/subject_all" />
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipHomeSubjectMath"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/subject_math"
                         android:textColor="@color/subj_math_fg"
-                        app:chipBackgroundColor="@color/subj_math_bg"
-                        app:chipStrokeColor="@color/subj_math_bg" />
+                        app:checkedIconTint="@color/primary"
+                        app:chipBackgroundColor="@color/subj_math_bg" />
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipHomeSubjectPhysics"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/subject_physics"
                         android:textColor="@color/subj_physics_fg"
-                        app:chipBackgroundColor="@color/subj_physics_bg"
-                        app:chipStrokeColor="@color/subj_physics_bg" />
+                        app:checkedIconTint="@color/primary"
+                        app:chipBackgroundColor="@color/subj_physics_bg" />
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipHomeSubjectChem"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/subject_chem"
                         android:textColor="@color/subj_chem_fg"
-                        app:chipBackgroundColor="@color/subj_chem_bg"
-                        app:chipStrokeColor="@color/subj_chem_bg" />
+                        app:checkedIconTint="@color/primary"
+                        app:chipBackgroundColor="@color/subj_chem_bg" />
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipHomeSubjectBio"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/subject_bio"
                         android:textColor="@color/subj_bio_fg"
-                        app:chipBackgroundColor="@color/subj_bio_bg"
-                        app:chipStrokeColor="@color/subj_bio_bg" />
+                        app:checkedIconTint="@color/primary"
+                        app:chipBackgroundColor="@color/subj_bio_bg" />
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipHomeSubjectEng"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/subject_eng"
                         android:textColor="@color/subj_eng_fg"
-                        app:chipBackgroundColor="@color/subj_eng_bg"
-                        app:chipStrokeColor="@color/subj_eng_bg" />
+                        app:checkedIconTint="@color/primary"
+                        app:chipBackgroundColor="@color/subj_eng_bg" />
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipHomeSubjectHistory"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/subject_history"
                         android:textColor="@color/subj_history_fg"
-                        app:chipBackgroundColor="@color/subj_history_bg"
-                        app:chipStrokeColor="@color/subj_history_bg" />
+                        app:checkedIconTint="@color/primary"
+                        app:chipBackgroundColor="@color/subj_history_bg" />
                 </com.google.android.material.chip.ChipGroup>
             </HorizontalScrollView>
 

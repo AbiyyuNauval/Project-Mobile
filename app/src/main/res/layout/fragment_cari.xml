@@ -84,44 +84,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                app:singleSelection="true"
+                app:selectionRequired="false"
                 app:chipSpacingHorizontal="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvRecentLabel">
 
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipCariCariRecent1"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cari_recent_1"
-                        android:textColor="@color/text_body"
-                        app:chipBackgroundColor="@color/surface"
                         app:chipIcon="@drawable/ic_history"
-                        app:chipIconTint="@color/text_secondary"
-                        app:chipIconVisible="true"
-                        app:chipStrokeColor="@color/outline_variant" />
+                        app:chipIconTint="@color/chip_selection_text"
+                        app:checkedIconVisible="false"
+                        app:chipIconVisible="true" />
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipCariCariRecent2"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cari_recent_2"
-                        android:textColor="@color/text_body"
-                        app:chipBackgroundColor="@color/surface"
                         app:chipIcon="@drawable/ic_history"
-                        app:chipIconTint="@color/text_secondary"
-                        app:chipIconVisible="true"
-                        app:chipStrokeColor="@color/outline_variant" />
+                        app:chipIconTint="@color/chip_selection_text"
+                        app:checkedIconVisible="false"
+                        app:chipIconVisible="true" />
                     <com.google.android.material.chip.Chip
+                        android:id="@+id/chipCariCariRecent3"
                         style="@style/TanyaBareng.Chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cari_recent_3"
-                        android:textColor="@color/text_body"
-                        app:chipBackgroundColor="@color/surface"
                         app:chipIcon="@drawable/ic_history"
-                        app:chipIconTint="@color/text_secondary"
-                        app:chipIconVisible="true"
-                        app:chipStrokeColor="@color/outline_variant" />
+                        app:chipIconTint="@color/chip_selection_text"
+                        app:checkedIconVisible="false"
+                        app:chipIconVisible="true" />
             </com.google.android.material.chip.ChipGroup>
 
             <TextView
@@ -150,52 +149,42 @@
                     android:id="@+id/chipGroupLevel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    app:selectionRequired="true"
                     app:chipSpacingHorizontal="8dp"
                     app:singleLine="true">
 
                         <com.google.android.material.chip.Chip
+                            android:id="@+id/chipCariSubjectAll"
                             style="@style/TanyaBareng.Chip"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/subject_all"
-                            android:textColor="@color/on_primary"
-                            app:chipBackgroundColor="@color/primary"
-                            app:chipIcon="@drawable/ic_check"
-                            app:chipIconTint="@color/on_primary"
-                            app:chipIconVisible="true"
-                            app:chipStrokeColor="@color/primary" />
+                            android:checked="true"
+                            android:text="@string/subject_all" />
                         <com.google.android.material.chip.Chip
+                            android:id="@+id/chipCariLevelSd"
                             style="@style/TanyaBareng.Chip"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/level_sd"
-                            android:textColor="@color/text_body"
-                            app:chipBackgroundColor="@color/surface"
-                            app:chipStrokeColor="@color/outline_variant" />
+                            android:text="@string/level_sd" />
                         <com.google.android.material.chip.Chip
+                            android:id="@+id/chipCariLevelSmp"
                             style="@style/TanyaBareng.Chip"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/level_smp"
-                            android:textColor="@color/text_body"
-                            app:chipBackgroundColor="@color/surface"
-                            app:chipStrokeColor="@color/outline_variant" />
+                            android:text="@string/level_smp" />
                         <com.google.android.material.chip.Chip
+                            android:id="@+id/chipCariLevelSma"
                             style="@style/TanyaBareng.Chip"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/level_sma"
-                            android:textColor="@color/text_body"
-                            app:chipBackgroundColor="@color/surface"
-                            app:chipStrokeColor="@color/outline_variant" />
+                            android:text="@string/level_sma" />
                         <com.google.android.material.chip.Chip
+                            android:id="@+id/chipCariLevelCollege"
                             style="@style/TanyaBareng.Chip"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/level_college"
-                            android:textColor="@color/text_body"
-                            app:chipBackgroundColor="@color/surface"
-                            app:chipStrokeColor="@color/outline_variant" />
+                            android:text="@string/level_college" />
                 </com.google.android.material.chip.ChipGroup>
             </HorizontalScrollView>
 

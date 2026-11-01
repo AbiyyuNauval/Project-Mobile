@@ -38,6 +38,9 @@
             android:name=".BuatPertanyaanActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Tutorial.TutorialActivity"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

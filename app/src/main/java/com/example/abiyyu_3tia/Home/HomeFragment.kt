@@ -12,7 +12,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
 import com.example.abiyyu_3tia.BuatPertanyaanActivity
+import com.example.abiyyu_3tia.Tutorial.TutorialActivity
 import com.example.abiyyu_3tia.R
 import com.example.abiyyu_3tia.databinding.FragmentHomeBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -73,6 +75,10 @@ class HomeFragment : Fragment() {
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 return when (menuItem.itemId) {
+                    R.id.action_tutorial -> {
+                        startActivity(Intent(requireContext(), TutorialActivity::class.java))
+                        true
+                    }
                     R.id.action_notification -> {
                         pindahTab(R.id.notifikasi)
                         true
@@ -88,7 +94,7 @@ class HomeFragment : Fragment() {
                     else -> false
                 }
             }
-        }, viewLifecycleOwner)
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
         binding.btnTanya.setOnClickListener {
             startActivity(Intent(requireContext(), BuatPertanyaanActivity::class.java))
